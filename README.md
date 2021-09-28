@@ -1,5 +1,3 @@
-# Мой сайт резюме! | My personal web-site resume!
+# Мой сайт резюме! | My personal web-site resume! Check this link ⬇️
 
-# Check this link ⬇️
-
-# http://www.aleksin-webresume.tk/
+## http://www.aleksin-webresume.tk/
