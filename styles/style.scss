@@ -490,6 +490,7 @@ section {
         &.active {
             left: 0;
             width: 100%;
+            height: 100vh;
         }
 
         ul {
@@ -561,6 +562,12 @@ section {
 }
 
 @media (max-width:767px) {
+    .navigation {
+        &.active {
+            height: 100vh;
+        }
+    }
+
     .services {
         .content {
             grid-template-columns: repeat(1, 1fr);
