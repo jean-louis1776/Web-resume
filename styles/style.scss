@@ -279,6 +279,7 @@ section {
         display: flex;
         justify-content: space-between;
         margin-top: 40px;
+        user-select: none;
 
         .textBox {
             width: 49%;
