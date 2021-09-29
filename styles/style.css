@@ -8,20 +8,6 @@
   scroll-behavior: smooth;
 }
 
-*::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-}
-
-*::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
-}
-
 :root {
   --black: #333;
   --black2: #333;
@@ -31,6 +17,20 @@
 
 body {
   overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
 }
 
 .container {
@@ -257,6 +257,9 @@ section {
   letter-spacing: 1px;
   text-decoration: none;
   margin-top: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .banner .content .socialMedia {
@@ -385,6 +388,10 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .services .content .serviceBox img {
@@ -476,6 +483,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
 }
 
 .project .content .workBx .textBx h3 {
@@ -593,9 +601,60 @@ section {
   padding: 10px 40px 30px;
   text-align: center;
   opacity: 0.5;
+  color: var(--black);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #fff;
+    --black2: #444;
+    --white: #333;
+    --white2: #444;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(252, 252, 252, 0.5);
+  }
+  body::-webkit-scrollbar-track {
+    background: #333333 !important;
+  }
+  body .navigation {
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  body .main .topbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  body .banner .content p {
+    color: var(--black);
+  }
+  body .banner .content .btn:hover {
+    background-color: #2196f3;
+  }
+  body .banner .content .socialMedia li a {
+    background-color: var(--black2);
+  }
+  body .banner .content .socialMedia li a:hover {
+    background-color: #2196f3;
+  }
+  body .services .content .serviceBox:hover {
+    background-color: #2196f3;
+  }
+  body .services .content .serviceBox img {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  body .project .content .workBx .textBx {
+    background-color: #444;
+  }
 }
 
 @media (max-width: 992px) {
+  .themeSwitch {
+    left: 20px;
+  }
   .navigation {
     left: -100%;
   }
