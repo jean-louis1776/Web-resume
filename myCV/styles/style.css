@@ -7,8 +7,343 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background-color: lightblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 49, 71, 0.59);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
 .mainWebsite {
-  margin: 20px 0;
+  margin: 20px 0 0;
   color: #111;
   text-decoration: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  min-height: 1000px;
+  background-color: #fff;
+  margin: 20px 50px 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .leftSide {
+  position: relative;
+  background-color: #003147;
+  padding: 40px;
+}
+
+.container .leftSide .profileText {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.container .leftSide .profileText .imgBx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.container .leftSide .profileText .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .leftSide .profileText h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.container .leftSide .profileText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.container .leftSide .contactInfo {
+  padding-top: 40px;
+}
+
+.container .leftSide .contactInfo .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.container .leftSide .contactInfo ul {
+  position: relative;
+}
+
+.container .leftSide .contactInfo ul li {
+  list-style: none;
+  position: relative;
+  margin: 10px 0;
+}
+
+.container .leftSide .contactInfo ul li span {
+  color: #fff;
+  font-weight: 300;
+}
+
+.container .leftSide .contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.container .leftSide .contactInfo ul li .text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container .leftSide .contactInfo.education ul li {
+  margin-bottom: 15px;
+}
+
+.container .leftSide .contactInfo.education ul li h5 {
+  color: #03a9f4;
+  font-weight: 500;
+}
+
+.container .leftSide .contactInfo.education ul li h4 {
+  color: #fff;
+  font-weight: 300;
+}
+
+.container .leftSide .contactInfo.education ul li h4:nth-child(2) {
+  font-weight: 500;
+}
+
+.container .leftSide .contactInfo.language ul li .percentTrack {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background-color: #081921;
+  display: block;
+  margin-top: 5px;
+}
+
+.container .leftSide .contactInfo.language ul li .percentTrack .percentThumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #03a9f4;
+}
+
+.container .rightSide {
+  position: relative;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.container .rightSide .about {
+  margin-bottom: 50px;
+}
+
+.container .rightSide .about:last-child {
+  margin-bottom: 0;
+}
+
+.container .rightSide .about .title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.container .rightSide .about p {
+  color: #333;
+}
+
+.container .rightSide .about .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 20px 0;
+}
+
+.container .rightSide .about .box .yearCompany {
+  min-width: 150px;
+}
+
+.container .rightSide .about .box .yearCompany h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+
+.container .rightSide .about .box .yearCompany h5:last-child {
+  margin-top: 5px;
+}
+
+.container .rightSide .about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
+.container .rightSide .about.skills .box {
+  position: relative;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 1fr;
+      grid-template-columns: 300px 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .rightSide .about.skills .box h4 {
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 500;
+  padding-right: 10px;
+}
+
+.container .rightSide .about.skills .box .percentTrack {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #f0f0f0;
+}
+
+.container .rightSide .about.skills .box .percentTrack .percentThumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #03a9f4;
+}
+
+.container .rightSide .about.interest ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.container .rightSide .about.interest ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.container .rightSide .about.interest ul li .fa {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
+
+@media (max-width: 992px) {
+  .mainWebsite {
+    margin: 10px 0 0;
+  }
+  .container {
+    margin: 10px 0 0;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .container .about.skills .box {
+    -ms-grid-columns: 200px 1fr !important;
+        grid-template-columns: 200px 1fr !important;
+  }
+  .container .about.interest ul {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .container .leftSide {
+    padding: 20px;
+  }
+  .container .rightSide {
+    padding: 20px;
+  }
+  .container .rightSide .about .box {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .container .rightSide .about .box .yearCompany {
+    margin-bottom: 5px;
+  }
+  .container .rightSide .about.skills .box {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .container .rightSide .about.interest ul {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
 }
