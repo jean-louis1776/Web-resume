@@ -6,6 +6,17 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+}
+
+:root {
+    --black: #333;
+    --black2: #333;
+    --white: #fff;
+    --white2: #fff;
+}
+
+body {
+    overflow-x: hidden;
 
     &::-webkit-scrollbar {
         width: 8px;
@@ -20,17 +31,6 @@
     &::-webkit-scrollbar-track {
         background: hsla(0, 0%, 0%, 0);
     }
-}
-
-:root {
-    --black: #333;
-    --black2: #333;
-    --white: #fff;
-    --white2: #fff;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 .container {
@@ -204,6 +204,7 @@ section {
             letter-spacing: 1px;
             text-decoration: none;
             margin-top: 20px;
+            transition: 0.3s;
         }
 
         .socialMedia {
@@ -309,6 +310,7 @@ section {
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            user-select: none;
 
             img {
                 max-width: 50px;
@@ -379,6 +381,7 @@ section {
                 font-weight: 600;
                 display: flex;
                 flex-direction: column;
+                text-align: center;
 
                 h3 {
                     color: #fff;
@@ -479,11 +482,96 @@ section {
     padding: 10px 40px 30px;
     text-align: center;
     opacity: 0.5;
+    color: var(--black);
+    user-select: none;
+}
+
+// SYSTEM THEME SHEME
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --black: #fff;
+        --black2: #444;
+        --white: #333;
+        --white2: #444;
+    }
+
+    body {
+        &::-webkit-scrollbar-thumb {
+            background-color: hsla(0, 0%, 99%, 0.5);
+        }
+
+        &::-webkit-scrollbar-track {
+            background: hsla(0, 0%, 20%, 1) !important;
+        }
+
+        .navigation {
+            border-right: 1px solid rgba(0, 0, 0, 0.5);
+        }
+
+        .main {
+            .topbar {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .banner {
+            .content {
+                p {
+                    color: var(--black);
+                }
+
+                .btn:hover {
+                    background-color: #2196f3;
+                }
+
+                .socialMedia {
+                    li {
+                        a {
+                            background-color: var(--black2);
+
+                            &:hover {
+                                background-color: #2196f3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .services {
+            .content {
+                .serviceBox {
+                    &:hover {
+                        background-color: #2196f3;
+                    }
+
+                    img {
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+
+        .project {
+            .content {
+                .workBx {
+                    .textBx {
+                        background-color: #444;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // RESPONSIVE STYLES
 
 @media (max-width:992px) {
+    .themeSwitch {
+        left: 20px;
+    }
+
     .navigation {
         left: -100%;
 
