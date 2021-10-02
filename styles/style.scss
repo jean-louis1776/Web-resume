@@ -312,6 +312,7 @@ section {
             align-items: center;
             flex-direction: column;
             user-select: none;
+            transition: 0.3s;
 
             img {
                 max-width: 50px;
