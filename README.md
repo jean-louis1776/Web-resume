@@ -4,10 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## First Step
 
-In the `Contact.jsx` (src/components/contact) you must change this code:
+In the `Contact.jsx` (`./src/components/contact`) you must change this code:
 
 ```
 // Find this code and change to your details from https://www.emailjs.com
+
 const sendEmail = (e) => {
         e.preventDefault()
 
