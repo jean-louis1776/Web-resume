@@ -1,5 +1,7 @@
 # My Official Page
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/173ab0dc-c699-4c1f-8ffd-cdf7b937cc68/deploy-status)](https://app.netlify.com/sites/aleksin-webresume/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## First Step
