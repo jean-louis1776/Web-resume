@@ -50,9 +50,16 @@ const Services = (props) => {
                             than just coding a website. This framework is easy
                             to use and understandable. <br />
                             <br />
-                            <i>
-                                For example, this website is built using React.
-                            </i>
+                            <a
+                                href="https://github.com/jean-louis1776/Web-resume"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                <i>
+                                    For example, this website is built using
+                                    React. (Click)
+                                </i>
+                            </a>
                         </p>
                     </div>
                 </article>

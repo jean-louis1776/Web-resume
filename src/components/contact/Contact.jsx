@@ -12,10 +12,10 @@ const Contact = (props) => {
         e.preventDefault()
 
         emailjs.sendForm(
-            "YOUR_SERVICE_ID",
-            "YOUR_TEMPLATE_ID",
+            "service_y978mto",
+            "template_rufvxic",
             form.current,
-            "YOUR_USER_ID"
+            "-RYcS0TPRHxcABgAR"
         )
 
         e.target.reset()

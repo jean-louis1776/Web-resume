@@ -95,3 +95,14 @@ button {
         width: var(--container-width-sm);
     }
 }
+
+@media screen and (max-width: 320px) {
+    .contact__option {
+        padding: 1rem;
+    }
+
+    input,
+    textarea {
+        padding: 0.7rem;
+    }
+}

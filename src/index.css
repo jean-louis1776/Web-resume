@@ -140,3 +140,13 @@ img {
         margin-bottom: 2rem;
     }
 }
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.4rem 1rem;
+    }
+}
