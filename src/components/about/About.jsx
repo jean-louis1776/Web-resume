@@ -42,10 +42,13 @@ const About = (props) => {
           <p>
             Hey! I'm Ilya. I'm 25 years old and I'm from Volgograd, Russia. For
             more than a year I have been studying at the GeekBrains IT
-            University at the Faculty of Fullstack JavaScript Development. There
-            are already over 15 non-commercial projects on my GitHub. Also I
-            plan to improve my skills in the field of mobile development using
-            the React Native framework.
+            University at the Faculty of Fullstack JavaScript Development.
+          </p>
+          <p>
+            There are already over 30 non-commercial projects on my GitHub. Also
+            I plan to improve my skills in the field of mobile development using
+            the React Native framework. Also I love making 8-bit games in PICO-8
+            engine (Lua).
           </p>
 
           <a href="#contact" className="btn btn-primary">
