@@ -32,6 +32,9 @@ import IMG31 from "../../assets/project31.jpg"
 import IMG32 from "../../assets/project32.jpg"
 import IMG33 from "../../assets/project33.jpg"
 import IMG34 from "../../assets/project34.jpg"
+import IMG35 from "../../assets/project35.jpg"
+import IMG36 from "../../assets/project36.jpg"
+import IMG37 from "../../assets/project37.jpg"
 
 const data = [
   {
@@ -274,6 +277,27 @@ const data = [
     title: "YouTube 2.0 (ReactJS)",
     github: "https://github.com/jean-louis1776/youtube-clone-reactjs",
     demo: "https://youtube-2.vercel.app/",
+  },
+  {
+    id: 35,
+    image: IMG35,
+    title: "Beats 3 Landing Page",
+    github: "https://github.com/jean-louis1776/responsive-headphones-beats",
+    demo: "https://responsive-beats.vercel.app/",
+  },
+  {
+    id: 36,
+    image: IMG36,
+    title: "GeekTube (ReactJS+Express)",
+    github: "https://github.com/jean-louis1776/GBTube",
+    demo: "http://www.git-tube.ru/",
+  },
+  {
+    id: 37,
+    image: IMG37,
+    title: "The Witcher (Parallax Effect)",
+    github: "https://github.com/jean-louis1776/witcher-parallax",
+    demo: "https://witcher-parallax.vercel.app/",
   },
 ]
 
