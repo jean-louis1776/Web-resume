@@ -35,6 +35,7 @@ import IMG34 from "../../assets/project34.jpg"
 import IMG35 from "../../assets/project35.jpg"
 import IMG36 from "../../assets/project36.jpg"
 import IMG37 from "../../assets/project37.jpg"
+import IMG38 from "../../assets/project38.jpg"
 
 const data = [
   {
@@ -298,6 +299,13 @@ const data = [
     title: "The Witcher (Parallax Effect)",
     github: "https://github.com/jean-louis1776/witcher-parallax",
     demo: "https://witcher-parallax.vercel.app/",
+  },
+  {
+    id: 38,
+    image: IMG38,
+    title: "Fairy Forest (Parallax Effect)",
+    github: "https://github.com/jean-louis1776/forest-parallax",
+    demo: "https://forest-parallax-ilalex.vercel.app/",
   },
 ]
 
